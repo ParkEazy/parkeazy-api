@@ -1,0 +1,34 @@
+{
+  "name": "parkeazy-api",
+  "version": "1.0.0",
+  "description": "API for ParkEazy User and Partner Mobile Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParkEazy/parkeazy-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Nilesh D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ParkEazy/parkeazy-api/issues"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fast-two-sms": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
