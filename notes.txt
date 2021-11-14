@@ -1,0 +1,13 @@
+Partner
+    --> Latitude
+    --> Longitude
+    --> Picture
+
+Booking
+
+User
+Vehicles - SELECT * FROM VEHICLES WHERE VEHICLES.UserID  = LoggedInUserID;
+Bookings - SELECT * FROM BOOKINGS WHERE Bookings.UserID = LoggedInUserID
+
+Partner
+Bookings - SELECT * FROM BOOKINGS WHERE Bookings.Parnter = LoggedInPartnerID

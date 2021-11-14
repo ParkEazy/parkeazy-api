@@ -1,5 +1,5 @@
+// const Vehicle = require('../models/User.model');
 const User = require('../models/User.model');
-
 const asyncHandler = require('../middleware/async');
 
 const ErrorResponse = require('../utils/errorResponse.util');
@@ -10,6 +10,8 @@ const { createJwtToken } = require('../utils/token.util');
 // @route   POST /api/v1/auth/register
 // @access  Public
 const registerUser = asyncHandler(async (req, res, next) => {
+  // await User.collection.drop();
+  // await Vehicle.collection.drop();
   const { phone } = req.body;
   const phoneExist = await User.findOne({ phone: phone });
   if (phoneExist) {
@@ -35,6 +37,7 @@ const registerUser = asyncHandler(async (req, res, next) => {
     userId: user._id,
     message: 'OTP sent to your registered phone number',
   });
+  // res.send('hello');
 });
 
 // @desc    Login User
@@ -74,6 +77,7 @@ const loginUser = asyncHandler(async (req, res, next) => {
 const verifyOtp = asyncHandler(async (req, res, next) => {
   const { userId, otp } = req.body;
   const user = await User.findById(userId);
+
   if (!user) {
     return next(new ErrorResponse('User not found', 400));
   }
