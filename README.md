@@ -1,6 +1,6 @@
 # ParkEazy
 
-![image](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![image](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![image](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![image](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![image](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E) ![image](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![image](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white) ![image](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&amp;logo=npm&amp;logoColor=white) ![image](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&amp;logo=express&amp;logoColor=white) ![image](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white) ![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white) ![image](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&amp;logo=prettier&amp;logoColor=F7BA3E)
 
 ParkEazy is a mobile application to connect commuters to safe, secure, and digitized parking spaces within their city.
 
@@ -9,7 +9,8 @@ ParkEazy is a mobile application to connect commuters to safe, secure, and digit
 - [Motivation](#motivation)
 - [Features](#features)
 - [Project Setup](#project-setup)
-- [Screenshots](#screenshots)
+- [User Interface](#user-interface)
+- [Usage](#usage)
 - [Contributors](#contributors)
 - [Contributing](#contributing)
 - [LICENSE](#license)
@@ -56,11 +57,27 @@ npm start
 
 **PS :** To get a FAST2SMS API key, signup for a FAST2SMS account [here](https://www.fast2sms.com/).
 
-## Screenshots
-
+## User Interface
 <img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/PartnerSideWelcome.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/PartnerSideCreate.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Home%20Screen%20-%20Security%20Guard-2.png" width="250">
 
 <img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Google%20Pixel%202%20-%201.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/ParkingDetail.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Home%20Screen%20-%20Security%20Guard.png" width="250">
+
+## Usage
+- This App will work only on devices with Android 7.0 (API level 24) and above, so make sure you having the compatible device.
+- After installing the App, Enable the Location from the Accessibility Settings.
+- Log-in using your phone number and enter the valid OTP.
+- Complete your profile by entering your name and email address.
+- You can see the nearby parking slots along with their rates.
+- Parking slots for different vehicles can be checked by selecting the right icon.
+- Particular parking slots can be searched using search bar.
+- Clicking the rate icon of nearby parking slots can show the details, like name, contact, address, time taken to reach, and number of slots left 
+- Add details of your vehicle. Where do we add more vehicles?
+- Select remember me for future use and click on book now.
+- Confirm the details and pay for the transaction.
+- Upon successful payment, you’ll receive a receipt with all the documents.
+- Current booking and previous booking can be viewed in notifications or in Profile -&gt; My Bookings.
+- Profile can be seen and edited in the profile section of the application.
+- You are good to go.
 
 ## Contributors
 
