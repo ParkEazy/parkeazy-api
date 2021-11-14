@@ -58,13 +58,9 @@ npm start
 
 ## Screenshots
 
-<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/PartnerSideWelcome.png" width="250">
-<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/PartnerSideCreate.png" width="250">
-<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Home%20Screen%20-%20Security%20Guard-2.png" width="250">
+<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/PartnerSideWelcome.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/PartnerSideCreate.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Home%20Screen%20-%20Security%20Guard-2.png" width="250">
 
-<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Google%20Pixel%202%20-%201.png" width="250">
-<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/ParkingDetail.png" width="250">
-<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Home%20Screen%20-%20Security%20Guard.png" width="250">
+<img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Google%20Pixel%202%20-%201.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/ParkingDetail.png" width="250"><img alt="drawing" src="https://raw.githubusercontent.com/ParkEazy/parkeazy-api/development/screenshots/Home%20Screen%20-%20Security%20Guard.png" width="250">
 
 ## Contributors
 
