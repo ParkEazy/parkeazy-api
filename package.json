@@ -1,7 +1,7 @@
 {
   "name": "parkeazy-api",
   "version": "1.0.0",
-  "description": "API for ParkEazy Client and Partner Mobile Application",
+  "description": "API for ParkEazy User and Partner Mobile Application",
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node server",
