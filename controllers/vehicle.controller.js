@@ -1,4 +1,5 @@
 const Vehicle = require('../models/Vehicle.model');
+const User = require('../models/User.model');
 
 const asyncHandler = require('../middleware/async');
 
@@ -8,8 +9,17 @@ const ErrorResponse = require('../utils/errorResponse.util');
 // @route   POST /api/v1/vehicle
 // @access  Private - User
 const newVehicle = asyncHandler(async (req, res, next) => {
-  req.body.user = res.locals.user._id;
-  const vehicle = await Vehicle.create(req.body);
+  const userId = res.locals.user._id;
+
+  const user = await User.findById(userId);
+  const vehicle = new Vehicle(req.body);
+
+  vehicle.user = userId;
+  user.vehicles.push(vehicle);
+
+  await vehicle.save();
+  await user.save();
+
   res.status(201).json({
     sucess: true,
     data: vehicle,
@@ -23,6 +33,7 @@ const newVehicle = asyncHandler(async (req, res, next) => {
 const getVehicles = asyncHandler(async (req, res, next) => {
   const userId = res.locals.user._id;
   const vehicles = await Vehicle.find({ user: userId });
+
   res.status(200).json({
     success: true,
     data: vehicles,
@@ -75,6 +86,7 @@ const deleteVehicle = asyncHandler(async (req, res, next) => {
     return next(new ErrorResponse('Unauthorized access', 401));
   }
 
+  await User.findByIdAndUpdate(userId, { $pull: { vehicles: vehicleId } });
   await vehicle.remove();
 
   res.status(200).json({
