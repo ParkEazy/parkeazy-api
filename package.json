@@ -1,11 +1,11 @@
 {
   "name": "parkeazy-api",
   "version": "1.0.0",
-  "description": "API for ParkEazy Client and Partner Mobile Application",
+  "description": "API for ParkEazy User and Partner Mobile Application",
   "main": "server.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node server",
-    "dev": "cross-env NODE_ENV=development nodemon server"
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,12 @@
     "colors": "^1.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "fast-two-sms": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "nodemon": "^2.0.15"
   }
 }
