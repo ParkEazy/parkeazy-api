@@ -101,11 +101,13 @@ const verifyOtp = asyncHandler(async (req, res, next) => {
 // @route   GET /api/v1/auth/me
 // @access  Private - User
 const fetchCurrentUser = asyncHandler(async (req, res, next) => {
-  const currentUser = res.locals.user;
+  const userId = res.locals.user._id;
+
+  const user = await User.findById(userId).populate({ path: 'vehicles' });
 
   res.status(200).json({
     success: true,
-    user: currentUser,
+    user: user,
     message: 'Fetch current user',
   });
 });
