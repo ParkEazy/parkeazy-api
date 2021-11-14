@@ -103,11 +103,37 @@ const verifyOtp = asyncHandler(async (req, res, next) => {
 const fetchCurrentUser = asyncHandler(async (req, res, next) => {
   const currentUser = res.locals.user;
 
-  return res.status(200).json({
+  res.status(200).json({
     success: true,
     user: currentUser,
     message: 'Fetch current user',
   });
 });
 
-module.exports = { registerUser, loginUser, verifyOtp, fetchCurrentUser };
+// @desc    Create existing user profile
+// @route   GET /api/v1/auth/profule
+// @access  Private - User
+const createProfile = asyncHandler(async (req, res, next) => {
+  const { name, email } = req.body;
+
+  const userId = res.locals.user._id;
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { name: name, email: email },
+    { new: true }
+  );
+
+  res.status(200).json({
+    success: true,
+    user: user,
+    message: 'User profile created',
+  });
+});
+
+module.exports = {
+  registerUser,
+  loginUser,
+  verifyOtp,
+  fetchCurrentUser,
+  createProfile,
+};
